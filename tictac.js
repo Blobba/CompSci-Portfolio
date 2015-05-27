@@ -49,13 +49,14 @@ function changeTheSpot(clickedSquare){
 }
  
 function checkWin(){
-    if()
-   
     
+    if(square1.innerHTML === square2.innerHTML && square3.innerHTML === square1.innerHTML){
+        alert(square1.innerHTML +  " won")
+    } 
+    else if(square4.innerHTML === square5.innerHTML && square6.innerHTML === square4.innerHTML){
+        alert(square4.innerHTML + " won")
+    }
     
-    
-
-
 }
 var turn = 1
 
