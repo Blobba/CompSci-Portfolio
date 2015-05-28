@@ -4,6 +4,8 @@
 //function listener() {
 //document.getElementById('display').innerHTML = "X";
 //}
+var turn = 1
+
 var square1 = document.getElementById("square1");
 square1.addEventListener("click", change);
 
@@ -30,20 +32,19 @@ square8.addEventListener("click", change);
 
 var square9 = document.getElementById("square9");
 square9.addEventListener("click", change);
-var turn = 1;
 function change(e){
     changeTheSpot(e.target);
     checkWin();
-    updateTurn();
 }
 
-var turn = 1;
 function changeTheSpot(clickedSquare){
-    if(turn%2 === 0 && clickedSquare.innerHTML.length != 1){
+    if(turn%2 === 0 && clickedSquare.innerHTML.length != 1 ){
          clickedSquare.innerHTML = "X"
+         turn++
     }
-    if(turn%2 != 0 && clickedSquare.innerHTML.length != 1){
-        clickedSquare.innerHTML = "O"     
+    if(turn%2 != 0 && clickedSquare.innerHTML.length != 1 ){
+        clickedSquare.innerHTML = "O" 
+        turn++
     }
     
 }
@@ -82,10 +83,6 @@ function checkWin(){
     
     
 }
-var turn = 1
 
-function updateTurn(){     
-    turn++
-}
 
 
