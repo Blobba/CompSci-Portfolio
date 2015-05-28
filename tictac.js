@@ -50,12 +50,36 @@ function changeTheSpot(clickedSquare){
  
 function checkWin(){
     
-    if(square1.innerHTML === square2.innerHTML && square3.innerHTML === square1.innerHTML){
-        alert(square1.innerHTML +  " won")
+    
+    if(square1.innerHTML === square2.innerHTML && square3.innerHTML === square1.innerHTML && square1.innerHTML.length != 0){
+        alert( square1.innerHTML + "won")
     } 
-    else if(square4.innerHTML === square5.innerHTML && square6.innerHTML === square4.innerHTML){
-        alert(square4.innerHTML + " won")
+    
+    else if(square4.innerHTML === square5.innerHTML && square6.innerHTML === square4.innerHTML && square4.innerHTML.length != 0){
+        alert(square4.innerHTML + "won")
+    } 
+    
+    else if(square7.innerHTML === square8.innerHTML && square7.innerHTML === square9.innerHTML && square7.innerHTML.length != 0){
+        alert(square7.innerHTML + "won")
     }
+    
+    else if(square1.innerHTML === square4.innerHTML && square1.innerHTML === square7.innerHTML && square1.innerHTML.length != 0){
+        alert(square7.innerHTML + "won")
+    }
+    
+     else if(square2.innerHTML === square5.innerHTML && square2.innerHTML === square8.innerHTML && square2.innerHTML.length != 0){
+        alert(square2.innerHTML + "won")
+    }
+     else if(square3.innerHTML === square6.innerHTML && square3.innerHTML === square9.innerHTML && square3.innerHTML.length != 0){
+        alert(square3.innerHTML + "won")
+    }
+     else if(square1.innerHTML === square5.innerHTML && square1.innerHTML === square9.innerHTML && square1.innerHTML.length != 0){
+        alert(square1.innerHTML + "won")
+    }
+     else if(square3.innerHTML === square5.innerHTML && square3.innerHTML === square7.innerHTML && square3.innerHTML.length != 0){
+        alert(square3.innerHTML + "won")
+    }
+    
     
 }
 var turn = 1
