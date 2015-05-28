@@ -39,10 +39,10 @@ function change(e){
 
 var turn = 1;
 function changeTheSpot(clickedSquare){
-    if(turn%2 === 0){
+    if(turn%2 === 0 && clickedSquare.innerHTML.length != 1){
          clickedSquare.innerHTML = "X"
     }
-    else{
+    if(turn%2 != 0 && clickedSquare.innerHTML.length != 1){
         clickedSquare.innerHTML = "O"     
     }
     
